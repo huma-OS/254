@@ -2,19 +2,19 @@ import React from 'react';
 // import logo from './logo.svg';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import CountdownTimer from './CountdownTimer';
 function App() {
-  // const title = 'welcome to my page';
-  // const years = 10;
-  // const link = "http://www.okothsimonhuma.com";
+
   return (
     <div className="App">
       <Navbar />
       <div className="content body-no-header">
-        {/* <h1>{title}</h1>
-        <p>{'i am a visual communication consultant'}</p>
-        <p>i have {years} years of experience</p>
-        <p>i have seviced over { Math.random() * 10000 } customers</p>
-        <a href={ link }>my site</a> */}
+      <div className="countdown-titles">
+       <p className="countdown-title">HOME OF THE PLANTAIN CARAMEL CHOCOLATE</p>
+      </div>
+      <div className="all-content">
+          <CountdownTimer targetDate={new Date('2025/10/10')} />
+        </div>
       </div>
       <Footer />
     </div>
