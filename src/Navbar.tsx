@@ -1,6 +1,7 @@
 import React from 'react';
 // import { useState } from 'react';
 import Menu from './Menu';
+import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   // const [menuOpen, setMenuOpen] = useState(false);
@@ -28,14 +29,14 @@ return (
   {/* <div className={`osh-header-menu-btn ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
     <div className="osh-header-menu-btn-burger"></div>
   </div> */}
-        <div className="osh-header-menu-btn">
+        <Link to="/subscribe" className="osh-header-menu-btn">
         <button 
           className="subscribe-cta" 
-          onClick={() => window.open('https://eu.jotform.com/242234028147349', '_blank')}
+          // onClick={() => window.open('https://eu.jotform.com/242234028147349', '_blank')}
         >
           SUBSCRIBE
         </button>
-        </div>
+        </Link>
 
   {/* class="osh-header-menu" */}
   {/* <Menu isOpen={menuOpen} closeMenu={closeMenu}/> */}
