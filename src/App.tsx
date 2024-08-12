@@ -1,23 +1,28 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 // import logo from './logo.svg';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import CountdownTimer from './CountdownTimer';
-function App() {
+import Home from './Home';
+import FormPage from './FormPage';
+
+const App: React.FC = () => {
 
   return (
-    <div className="App">
-      <Navbar />
-      <div className="content body-no-header">
-      <div className="countdown-titles">
-       <p className="countdown-title">HOME OF THE PLANTAIN CARAMEL CHOCOLATE</p>
+      <div className="App">
+        <Navbar />
+       
+        <div className="content body-no-header">
+        <div className="countdown-titles">
+      <p className="countdown-title">HOME OF THE PLANTAIN CARAMEL CHOCOLATE</p>
       </div>
-      <div className="all-content">
-          <CountdownTimer targetDate={new Date('2025/10/10')} />
+         <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/subscribe" element={<FormPage />} />
+          </Routes>
         </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
   );
 }
 

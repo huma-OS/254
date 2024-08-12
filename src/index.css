@@ -363,9 +363,10 @@ p.countdown-title {
 }
 
 @media (min-width: 768px) {
-  .body-no-header {
+  /* .body-no-header {
     margin-top: 10%;
-}
+} */
+
   #clockdiv {
     font-size: 8rem;
     flex-direction: row;
@@ -383,6 +384,7 @@ p.countdown-title {
     align-content: center;
     justify-content: center;
     align-items: center;
+    margin-top: 10%;
 }
 
 .osh-footer {
@@ -561,3 +563,21 @@ figure.slide-model-elements.card.loading {
 /* //DESKTOP// */
 /* @media (min-width: 770px) {} */
 /* //END PAGEs// */
+
+/* form 3rd party */
+.avatarBox {
+  display: none!important;
+}
+
+div.formFooter{
+  display: none !important;
+  background-color: #ff3300;
+}
+
+div#cid_1 {
+  max-width: 100%!important;
+}
+
+div#cid_3 {
+  max-width: 100%;
+}
